@@ -31,7 +31,7 @@ router.get("/", (req, res) => {
 app.use("/api", router);
 
 cron.schedule("*/20 * * * *", () => {
-  fetch("https://mettl-hack.onrender.com/api")
+  fetch("https://mockmasterbackend.onrender.com/api")
     .then(() => {
       logger.info("Server kept awake successfully");
     })
